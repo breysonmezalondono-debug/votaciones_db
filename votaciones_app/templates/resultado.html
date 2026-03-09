@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+</head>
+<body>
+    <h2>Resultado de Consulta</h2>
+
+    {% if datos %}
+        <p><strong>Número:</strong> {{ datos.numero_identificacion }}</p>
+        <p><strong>Lugar:</strong> {{ datos.lugar }}</p>
+        <p><strong>Dirección:</strong> {{ datos.direccion }}</p>
+        <p><strong>Mesa:</strong> {{ datos.mesa }}</p>
+        <p><strong>Zona:</strong> {{ datos.zona }}</p>
+    {% else %}
+        <p>No se encontró información.</p>
+    {% endif %}
+
+    <a href="/">Volver</a>
+</body>
+</html>
